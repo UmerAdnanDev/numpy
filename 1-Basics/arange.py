@@ -1,0 +1,10 @@
+#arange(start , stop , step)
+import numpy as np 
+array1 = np.arange(1,12)
+array2 = np.arange(1,10,2)
+array3 = np.arange(10,1,-1)
+array4 = np.arange(0,10,2)
+print(array1)
+print(array2)
+print(array3)
+print(array4)

@@ -10,3 +10,8 @@ a3 = n.array([1,2])
 print(a3+a2)
 a4 = n.array([[1,2],[3,4],[5,6]])
 print(a2*a4)
+try:
+ print(a3+a1) # will cause error as  shape is incompatible
+#ValueError: operands could not be broadcast together with shapes (2,) (3,) 
+except ValueError as e:
+  print("Value Error: "+ str(e))

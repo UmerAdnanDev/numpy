@@ -15,3 +15,12 @@ try:
 #ValueError: operands could not be broadcast together with shapes (2,) (3,) 
 except ValueError as e:
   print("Value Error: "+ str(e))
+print()
+list1 = [1,2,3]
+list2 = [[1],[2],[3]]
+try:
+  list3 = [ x+y for x,y in zip(list1,list2)]
+except Exception as e:
+  print(f"Error: {e}")  # error will occur as lists don't expand
+print(list1+list2) #[1, 2, 3, [1], [2], [3]]
+print(list1*3) #[1, 2, 3, 1, 2, 3, 1, 2, 3]

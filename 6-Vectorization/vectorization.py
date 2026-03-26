@@ -11,3 +11,11 @@ print(sum)
 list3 =[[1,2],[3,4]]
 difference = [x-y for x,y in list3]
 print(difference)
+#with list
+import numpy as n
+array1 = n.array([1,2,3,4,5])
+cube_array = array1 ** 3
+print(cube_array)
+array2 = n.array([6,7,8,9,10])
+print(array1 + array2)
+
